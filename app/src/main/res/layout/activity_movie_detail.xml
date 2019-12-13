@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEBE2"
+    android:orientation="vertical"
+    android:paddingLeft="40px"
+    android:paddingTop="40px"
+    android:paddingEnd="40px"
+    android:paddingRight="40px"
+    android:paddingBottom="40px"
+    tools:context=".MovieDetailActivity">
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="10sp"
+        android:text="Movie"
+        android:textColor="#002685"
+        android:textSize="20sp"
+        app:fontFamily="@font/source_sans_pro_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/director_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5sp"
+            android:paddingTop="3sp"
+            android:paddingBottom="5sp"
+            android:text="Director"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro_bold" />
+
+        <TextView
+            android:id="@+id/director_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/actor_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingBottom="3dp"
+            android:text="Actors"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro_bold" />
+
+        <TextView
+            android:id="@+id/actor_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/genre_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Genre"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro_bold" />
+
+        <TextView
+            android:id="@+id/genre_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingTop="3dp"
+            android:progressTint="#FFB73B" />
+
+        <TextView
+            android:id="@+id/rating_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro" />
+
+        <TextView
+            android:id="@+id/rating_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/release_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Release"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro_bold" />
+
+        <TextView
+            android:id="@+id/release_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        android:scrollbarSize="4dp">
+
+        <TextView
+            android:id="@+id/plot_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/source_sans_pro"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Plot"
+            android:textColor="#415385"
+            app:fontFamily="@font/source_sans_pro_bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/open_movie_review"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:background="#002685"
+        android:text="r a t e   m o v i e "
+        android:textColor="#FFB73B"
+        app:fontFamily="@font/source_code_pro_black" />
+
+</LinearLayout>
